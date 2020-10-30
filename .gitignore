@@ -1,0 +1,10 @@
+14:04 $ cat .gitignore
+.classpath
+.project
+.settings
+**/target
+*.iml
+*.pmd
+*.log
+*/out
+*/lib
