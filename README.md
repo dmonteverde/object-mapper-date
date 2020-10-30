@@ -15,23 +15,23 @@ j11
 `mvn install`
 `java -jar ./target/omd-jar-with-dependencies.jar`
 
-> ✔ ~/dev/git/object-mapper-date [main|✔]
+> `✔ ~/dev/git/object-mapper-date [main|✔]`
 > 
-> 16:35 $ java -jar ./target/omd-jar-with-dependencies.jar
+> `16:35 $ java -jar ./target/omd-jar-with-dependencies.jar`
 > 
-> 16:38:19.548 [main] INFO com.dam.omd.CheckObjectMapper - sample_size: 10000
+> `16:38:19.548 [main] INFO com.dam.omd.CheckObjectMapper - sample_size: 10000`
 > 
-> 16:38:19.553 [main] INFO com.dam.omd.CheckObjectMapper - pool_thread_size: 10
+> `16:38:19.553 [main] INFO com.dam.omd.CheckObjectMapper - pool_thread_size: 10`
 > 
-> 16:38:21.111 [main] INFO com.dam.omd.CheckObjectMapper - case: SDF*********************************************** elapseTime: 894 ms. Failed: 0 of 10000 (0.0%)
+> `16:38:21.111 [main] INFO com.dam.omd.CheckObjectMapper - case: SDF*********************************************** elapseTime: 894 ms. Failed: 0 of 10000 (0.0%)`
 > 
-> 16:38:21.526 [main] INFO com.dam.omd.CheckObjectMapper - case: SDF by WRAPPER - NOT CLONE (not thread-safe!)***** elapseTime: 413 ms. Failed: 2603 of 10000 (26.03%)
+> `16:38:21.526 [main] INFO com.dam.omd.CheckObjectMapper - case: SDF by WRAPPER - NOT CLONE (not thread-safe!)***** elapseTime: 413 ms. Failed: 2603 of 10000 (26.03%)`
 > 
-> 16:38:22.209 [main] INFO com.dam.omd.CheckObjectMapper - case: SDF by WRAPPER - FULL CLONE*********************** elapseTime: 681 ms. Failed: 0 of 10000 (0.0%)
+> `16:38:22.209 [main] INFO com.dam.omd.CheckObjectMapper - case: SDF by WRAPPER - FULL CLONE*********************** elapseTime: 681 ms. Failed: 0 of 10000 (0.0%)`
 > 
-> 16:38:22.479 [main] INFO com.dam.omd.CheckObjectMapper - case: FDF by WRAPPER************************************ elapseTime: 270 ms. Failed: 0 of 10000 (0.0%)
+> `16:38:22.479 [main] INFO com.dam.omd.CheckObjectMapper - case: FDF by WRAPPER************************************ elapseTime: 270 ms. Failed: 0 of 10000 (0.0%)`
 > 
-> 16:38:22.617 [main] INFO com.dam.omd.CheckObjectMapper - case: withCustomDateDeserializer (fdf)****************** elapseTime: 136 ms. Failed: 0 of 10000 (0.0%)
+> `16:38:22.617 [main] INFO com.dam.omd.CheckObjectMapper - case: withCustomDateDeserializer (fdf)****************** elapseTime: 136 ms. Failed: 0 of 10000 `(0.0%)`
 
 
  `java -jar  ./target/omd-jar-with-dependencies.jar {sample_size} {pool_thread_size}`
