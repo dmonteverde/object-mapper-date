@@ -10,11 +10,11 @@ One case is not <code>thread-safe</code> and generates incorrect dates.
 
 
 Evaluate alternatives are
-- SDF: objectMapper using setDateFormat of SDF.
-- SDF by WRAPPER - NOT CLONE (not thread-safe!): objectMapper using setDateFormat of a DateFormat wrapper using SDF, with wrong clone implemtation.
-- SDF by WRAPPER - FULL CLONE: objectMapper using setDateFormat of a DateFormat wrapper using SDF.
-- FDF by WRAPPER: objectMapper using setDateFormat of a DateFormat wrapper using FDF.
-- withCustomDateDeserializer (FDF): objectMapper using a custom module that defines a date deserializer with FDF.
+- **SDF**: objectMapper using setDateFormat of SDF.
+- **SDF by WRAPPER - NOT CLONE (not thread-safe!)**: objectMapper using setDateFormat of a DateFormat wrapper using SDF, with wrong clone implemtation.
+- **SDF by WRAPPER - FULL CLONE**: objectMapper using setDateFormat of a DateFormat wrapper using SDF.
+- **FDF by WRAPPER**: objectMapper using setDateFormat of a DateFormat wrapper using FDF.
+- **withCustomDateDeserializer (FDF)**: objectMapper using a custom module that defines a date deserializer with FDF.
 
 
 ## Technology
