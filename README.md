@@ -8,8 +8,8 @@ j11
 
 
 ## Definitions
-SDF=SimpleDateFormat
-FDF=FastDateFormat
+- SDF=SimpleDateFormat
+- FDF=FastDateFormat
 
 ## use
 
