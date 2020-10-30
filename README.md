@@ -31,7 +31,7 @@ j11
 > 
 > `16:38:22.479 [main] INFO com.dam.omd.CheckObjectMapper - case: FDF by WRAPPER************************************ elapseTime: 270 ms. Failed: 0 of 10000 (0.0%)`
 > 
-> `16:38:22.617 [main] INFO com.dam.omd.CheckObjectMapper - case: withCustomDateDeserializer (fdf)****************** elapseTime: 136 ms. Failed: 0 of 10000 `(0.0%)`
+> `16:38:22.617 [main] INFO com.dam.omd.CheckObjectMapper - case: withCustomDateDeserializer (fdf)****************** elapseTime: 136 ms. Failed: 0 of 10000 (0.0%)`
 
 
  `java -jar  ./target/omd-jar-with-dependencies.jar {sample_size} {pool_thread_size}`
