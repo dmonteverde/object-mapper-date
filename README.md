@@ -1,5 +1,4 @@
-# object-mapper-date
-#jackson object-mapper custom SimpleDateFormat vs FastDateFormat Benchmark
+# jackson object-mapper custom SimpleDateFormat vs FastDateFormat Benchmark
 
 
 ## Tecnologia
@@ -13,8 +12,8 @@ j11
 
 ## use
 
-mvn install
-./target/omd-jar-with-dependencies.jar
+`mvn install`
+`./target/omd-jar-with-dependencies.jar`
 
 > ✔ ~/dev/git/object-mapper-date [main|✔]
 > 16:35 $ java -jar ./target/omd-jar-with-dependencies.jar
@@ -27,7 +26,7 @@ mvn install
 > 16:38:22.617 [main] INFO com.dam.omd.CheckObjectMapper - case: withCustomDateDeserializer (fdf)****************** elapseTime: 136 ms. Failed: 0 of 10000 (0.0%)
 
 
- ./target/omd-jar-with-dependencies.jar {sample_size} {pool_thread_size}
+ `./target/omd-jar-with-dependencies.jar {sample_size} {pool_thread_size}`
 
 > ✔ ~/dev/git/object-mapper-date [main|✔]
 > 16:35 $ java -jar ./target/omd-jar-with-dependencies.jar 10000 50
