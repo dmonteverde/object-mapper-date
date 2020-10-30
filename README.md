@@ -15,6 +15,8 @@ j11
 `mvn install`
 `java -jar ./target/omd-jar-with-dependencies.jar`
 
+![image info](./doc/pictures/img1.png)
+
 > `✔ ~/dev/git/object-mapper-date [main|✔]`
 > 
 > `16:35 $ java -jar ./target/omd-jar-with-dependencies.jar`
@@ -35,6 +37,9 @@ j11
 
 
  `java -jar  ./target/omd-jar-with-dependencies.jar {sample_size} {pool_thread_size}`
+ 
+ 
+![image info](./doc/pictures/img2.png)
 
 > `✔ ~/dev/git/object-mapper-date [main|✔]`
 > 
