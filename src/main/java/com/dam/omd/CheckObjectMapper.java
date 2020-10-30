@@ -1,4 +1,4 @@
-package com.despegar.dam.object_mapper_date;
+package com.dam.omd;
 
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;
@@ -8,6 +8,7 @@ import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.StopWatch;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -40,7 +41,7 @@ public class CheckObjectMapper
     
     
     public static void evaluate(String caseName, ObjectMapper objectMapper) {
-    	log.info("start case: {}", caseName);
+    	log.trace("start case: {}", caseName);
     	
         final ExecutorService executor = Executors.newFixedThreadPool(poolThreadSize);
         final AtomicInteger failedCount = new AtomicInteger();
@@ -79,8 +80,8 @@ public class CheckObjectMapper
         stopWatch.stop();
         
         final int total = oKCount.get() + failedCount.get();
-		log.info("case: {} elapseTime:{} ms. Failed: {} of {} ({}%)", 
-        		caseName, 
+		log.info("case: {} elapseTime: {} ms. Failed: {} of {} ({}%)", 
+				StringUtils.rightPad(caseName, 50, "*"), 
         		stopWatch.getTime(TimeUnit.MILLISECONDS), 
         		failedCount.get(), total,
         		failedCount.get() *100.0 / total);

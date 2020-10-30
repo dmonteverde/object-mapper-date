@@ -1,4 +1,4 @@
-package com.despegar.dam.object_mapper_date;
+package com.dam.omd;
 
 import java.io.IOException;
 import java.text.DateFormat;
@@ -10,6 +10,7 @@ import java.util.Date;
 import java.util.LinkedHashMap;
 import java.util.Map;
 
+import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.time.FastDateFormat;
 
 import com.fasterxml.jackson.core.JsonParser;

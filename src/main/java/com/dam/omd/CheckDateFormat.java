@@ -1,4 +1,4 @@
-package com.despegar.dam.object_mapper_date;
+package com.dam.omd;
 
 import java.text.SimpleDateFormat;
 import java.time.ZoneOffset;
@@ -21,11 +21,9 @@ public class CheckDateFormat {
 
 	private static final Logger log = LoggerFactory.getLogger(CheckDateFormat.class);
 	 
-	 
     private static final SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSSz");
     private static final FastDateFormat fdf = FastDateFormat.getInstance("yyyy-MM-dd'T'HH:mm:ss.SSSz");
 
-	
 	public static void main( String[] args )
     {
 		if( args.length > 0 ) {
@@ -45,7 +43,7 @@ public class CheckDateFormat {
     
     public static void invokeFormat(String caseName, boolean useFastDateFormat)  {
     	
-    	log.info("start case: {}", caseName);
+    	log.trace("start case: {}", caseName);
     	
         final ExecutorService executor = Executors.newFixedThreadPool(poolThreadSize);
         final AtomicInteger failedCount = new AtomicInteger();
@@ -82,7 +80,7 @@ public class CheckDateFormat {
         
         final int total = oKCount.get() + failedCount.get();
         
-		log.info("case: {} elapseTime:{} ms. Failed: {} of {} ({}%)", 
+		log.info("case: {} elapseTime: {} ms. Failed: {} of {} ({}%)", 
         		caseName, 
         		stopWatch.getTime(TimeUnit.MILLISECONDS), 
         		failedCount.get(), total,

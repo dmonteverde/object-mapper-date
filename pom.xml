@@ -23,6 +23,7 @@
 		
 		<maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
 		<maven-compiler-plugin.version>3.8.1</maven-compiler-plugin.version>
+		<maven-assembly-plugin.version>3.1.1</maven-assembly-plugin.version>
 	</properties>
 
 
@@ -53,12 +54,32 @@
 	</dependencies>
 
 	<build>
-		<finalName>${project.artifactId}</finalName>
+		<finalName>omd</finalName>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
-				<version>${maven-jar-plugin.version}</version>
+				<artifactId>maven-assembly-plugin</artifactId>
+				<version>${maven-assembly-plugin.version}</version>
+				<configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                     <archive>
+			        <manifest>
+			          <mainClass>com.dam.omd.CheckObjectMapper</mainClass>
+			        </manifest>
+			      </archive>
+                </configuration>
+
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
