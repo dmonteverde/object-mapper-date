@@ -26,6 +26,7 @@ Evaluate alternatives are
 ## Test
 
 `mvn install`
+
 `java -jar ./target/omd-jar-with-dependencies.jar`
 
 ![image info](./doc/pictures/pict1.png)
